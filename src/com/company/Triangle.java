@@ -17,7 +17,19 @@ public class Triangle extends Shape {
         this.p3 = p3;
         this.sideA = p1.distanceToPoint(p2);
         this.sideB = p2.distanceToPoint(p3);
-        this.sideC = p1.distanceToPoint(p3);
+        this.sideC = p3.distanceToPoint(p1);
+    }
+
+    public double getSideA() {
+        return sideA;
+    }
+
+    public double getSideB() {
+        return sideB;
+    }
+
+    public double getSideC() {
+        return sideC;
     }
 
     @Override

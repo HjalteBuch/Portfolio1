@@ -4,7 +4,6 @@ public class Rectangle extends Shape{
     private Point point;
     private int height;
     private int width;
-    private Point center;
 
     public Rectangle(String name, Point point, int height, int width) {
         super(name);
@@ -22,8 +21,7 @@ public class Rectangle extends Shape{
     Point calculateCenter() {
         int x = point.getX() + (width/2);
         int y = point.getY() + (height/2);
-        center = new Point(x, y);
-        return center;
+        return new Point(x, y);
     }
 
     @Override
